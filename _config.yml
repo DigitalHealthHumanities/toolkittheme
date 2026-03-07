@@ -1,0 +1,48 @@
+title: Sample Toolkit
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+sass:
+  style: compressed
+
+collections:
+  lessons:
+    output: true
+
+# --------------------------------------------------------------
+# SITE MENU SETTINGS
+# --------------------------------------------------------------
+# Each menu item needs a `label` (whats shown), and a `link`
+# (where it goes). An item can optionally have a dropdown
+# submenu via `sub`.
+
+menu:
+  - label: 'About'
+    link: '#'
+  - label: 'Lessons'
+    sub:
+      - label: 'All Lessons'
+        link: 'lessons/'
+  - label: 'White Paper'
+    link: '#'
+  - label: 'Resources'
+    link: '#'
+
+# --------------------------------------------------------------
+# SITE FOOTER SETTINGS
+# --------------------------------------------------------------
+#
+
+footer:
+  links:
+    - label: 'GitHub'
+
+    
+exclude :
+    - Gemfile
+    - Gemfile.lock
+    - CNAME
+    - LICENSE
+    - README.md
+    - INSTALL.md
+    - vendor/bundle
+    - vendor/cache
+    

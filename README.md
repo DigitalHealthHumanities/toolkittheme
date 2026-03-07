@@ -1,10 +1,6 @@
 # jekyll-toolkit-theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+This theme is designed to help you jumpstart your own responsive learning GitHub Pages site. Add your lesson plans and have your students be able to learn asynchronously for free!
 
 ## Installation
 
@@ -30,11 +26,32 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+### Includes
+- authorshort
+- definition
+- footer
+- head
+- heading
+- inpageTOC
+- pagenav
+- toaccordion
+
+### Layouts
+- bio
+- lesson
+- lessongroup
+- page
+- post
+- section
+- sublesson
+
+### Unique Sass Classes
+- .term - bold and change the color of your key term(s)
+- .highlighter - highlight key text in L3 Yellow (#FEB80A)
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jekyll-toolkit-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/DigitalHealthHumanities/toolkittheme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ## Development
 
