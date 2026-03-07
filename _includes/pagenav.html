@@ -1,0 +1,36 @@
+<div class="justify-content-center btn-group row mt-2">
+    {% if page.nest != "header" %}
+        {% if page.split == "back" %}
+            <div class="col-5 col-md-3 col-lg-2 btn-group">
+                <a href="{{ site.baseurl }}{{ page.splitmac }}" class="btn btn-secondary" role="button">Previous Lesson for Mac Users</a>.
+            </div>
+            <div class="col-5 col-md-3 col-lg-2 btn-group">
+                <a href="{{ site.baseurl }}{{ page.splitpc }}" class="btn btn-info" role="button">Previous Lesson for Windows Users</a>.
+            </div>
+        {% elsif page.previouslesson and page.previouslesson != 'n/a' %}
+            <div class="col-5 col-md-3 col-lg-2 btn-group">
+                <a href="{{ site.baseurl }}{{ page.previouslesson }}" class="btn btn-primary" role="button">Previous Lesson</a>.
+            </div>
+            {% endif %} 
+    {% endif %}
+    <div class="col-5 col-md-3 col-lg-2 btn-group">
+        <a href="{{ site.baseurl }}/lessons/{{ page.group }}" class="btn btn-success" role="button">Return to Lesson
+            Group</a>
+    </div>
+    {% if page.nextlesson %}
+        {% if page.split == "split" %}
+            <div class="col-5 col-md-3 col-lg-2 btn-group">
+            <a href="{{ site.baseurl }}{{ page.splitmac }}" class="btn btn-secondary" role="button">Next Lesson for Mac Users</a>.
+            </div>
+            <div class="col-5 col-md-3 col-lg-2 btn-group">
+            <a href="{{ site.baseurl }}{{ page.splitpc }}" class="btn btn-info" role="button">Next Lesson for Windows Users</a>.
+            </div>
+        {% elsif page.nextlesson and page.nextlesson != 'n/a' %}
+            <div class="col-5 col-md-3 col-lg-2 btn-group">
+            <a href="{{ site.baseurl }}{{ page.nextlesson }}" class="btn btn-primary" role="button">Next Lesson</a>.
+            </div>
+        {% endif %}
+        </div>
+    {% endif%}
+</div>
+

@@ -1,0 +1,40 @@
+<!-- title | About Lessons White Paper Resources -->
+<nav id='dhht-header' class='navbar navbar-expand-lg dhht-navbar-default navbar-expand-lg navbar-expand-md' data-bs-theme='dark'>
+    <div class='container-fluid'>
+        <a class='navbar-brand col-3 justify-content-start' href="{{ '/' | absolute_url }}" title='Home'>
+            {{ site.title | newline_to_br }}
+        </a>
+
+        <button class='navbar-toggler col-2' type='button' data-bs-toggle='collapse' data-bs-target='#dhht-header-navbar'
+            aria-controls='dhht-header-navbar' aria-expanded='false' aria-label='navigation'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class='collapse navbar-collapse justify-content-end col-7' id="dhht-header-navbar" data-bs-theme='dark'>
+            
+            <ul class='navbar-nav ml-auto'>
+                {% for item in site.menu %}
+                    {% if item.sub %}
+                    <li class='nav-item dropdown'>
+                        <a class='nav-link dropdown-toggle' href='#' role="button" id='dhht-{{ item.label | slugify }}-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                            {{ item.label }}
+                        </a>
+                        <ul class='dropdown-menu' aria-labelledby='dhht-{{ item.label | slugify }}-dropdown'>
+                            {% for sub in item.sub %}
+                                <li>
+                                    <a class='dropdown-item' href='{{ sub.link | absolute_url }}'>{{ sub.label }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% else %}
+                    <li class='nav-item'>
+                        <a class='nav-link' href='{{ item.link | absolute_url }}'>{{ item.label }}</a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

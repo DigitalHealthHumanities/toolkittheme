@@ -1,0 +1,18 @@
+---
+layout: page
+format: lesson
+---
+
+
+<h1 class="center"><a href="{{ site.baseurl }}{{ page.permalink }}">{{ page.title }}</a></h4>
+<h4 class="sans center">{{ page.abstract }}</h1>
+
+{% for lessonloop in site.lessons %}
+{% if lessonloop.layout == "sublesson" %}
+{% if page.structurehead == lessonloop.structurehead %}
+<b>Lesson {{ lessonloop.lessonprint }}: <a href="{{ site.baseurl }}{{ lessonloop.permalink }}">{{ lessonloop.title }}</a></b><br>
+{{ lessonloop.abstract }}<br>
+{% endif %}
+{% endif %}
+{% endfor %}
+

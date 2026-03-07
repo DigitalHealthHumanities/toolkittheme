@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+{% for biomd in site.about %}
+{% if biomd.name == page.name %}
+<h1>{{ biomd.name }}</h1><br>
+{{ biomd.affiliation }}<br><br>
+{% if biomd.headshot == "n/a" %}
+{% else %}
+<img src="{{ site.baseurl }}/assets/img/{{ biomd.headshot }}" style="max-width: 400px; height: auto"><br>
+{% endif %}
+{{ biomd.bio }}<br><br>
+
+{% if biomd.association == "awardee" %}
+<h2>{{ biomd.projecttitle }}</h2><br>
+{{ biomd.projectblurb }}
+{% endif %}
+{% endif %}
+{% endfor %}
+

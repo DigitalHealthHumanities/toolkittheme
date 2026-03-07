@@ -1,0 +1,57 @@
+---
+layout: page
+format: lessongroup
+---
+
+<h1>{{ page.title }}</h1>
+
+<h4>{{ page.description }}</h4>
+
+<div class="accordion dhht-accordion" id="accordion-{{ page.title }}">
+  {% assign lessongroup = site.lessons | where: "group", page.group | where: "layout", "lesson" %}
+  {% for lesson in lessongroup %}
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="lessongroup-{{ lesson.structurehead }}">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedAccordion-{{ lesson.structurehead }}"
+          aria-expanded="false" aria-controls="collapseOne">
+          {{ lesson.title }}
+        </button>
+      </h2>
+    </div>
+    <div class="accordion-body">
+      {% include tocaccordion.html lesson=lesson %}
+    </div>
+  {% endfor %}
+</div>
+
+<!-- 
+
+<p style="margin-left: 80px"><Lesson {{ secondloop.lessonprint }}: <a href="{{ secondloop.permalink }}">{{ secondloop.title }}</a><br></p>
+
+{% for lessonloop in site.lessons %}
+{% if lessonloop.layout == "lesson" %}
+{% if page.group == lessonloop.group %}
+<b><a href="{{ site.baseurl }}{{ lessonloop.permalink }}">{{ lessonloop.title }}</a></b><br>
+{{ lessonloop.abstract }}<br>
+{% assign largelesson = lessonloop.structurehead %}
+{% for secondloop in site.lessons %}
+{% if secondloop.structurehead == largelesson %}
+{% if secondloop.layout == "sublesson" %}
+
+{% case secondloop.nest %}
+  {% when "nonest" %}
+  {{ secondloop.lessonprint }}: <a href="{{ site.baseurl }}{{ secondloop.permalink }}">{{ secondloop.title }}</a><br>
+  {% when "windows" %}
+  <p style="margin-left: 40px">{{ secondloop.lessonprint }}: For Windows Users - <a href="{{ site.baseurl }}{{ secondloop.permalink }}">{{ secondloop.title }}</a><br></p>
+  {% when "mac" %}
+ <p style="margin-left: 40px">{{ secondloop.lessonprint }}: For Mac Users - <a href="{{ site.baseurl }}{{ secondloop.permalink }}">{{ secondloop.title }}</a><br></p>
+  {% else %}
+  {{ secondloop.lessonprint }}: {{ secondloop.title }}
+{% endcase %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endif %}
+{% endfor %} -->
+

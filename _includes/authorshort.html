@@ -1,0 +1,10 @@
+Lesson by: <br>
+{% capture authorlist %}{{ page.authors }}{% endcapture %}
+{% assign uniqueauthor = authorlist | split:"," %}
+{% for item in uniqueauthor %}
+{% for lookup in site.data.authors.main %}
+{% if lookup.authorlookup == item %}
+{{ lookup.name }}, {{ lookup.affiliation }}<br>
+{% endif %}
+{% endfor %}
+{% endfor %}

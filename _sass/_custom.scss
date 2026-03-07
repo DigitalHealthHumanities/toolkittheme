@@ -1,0 +1,201 @@
+@media  (max-width: 450px) {
+    #dhht-header {
+        padding-top: 1.0rem;
+        padding-bottom: 1.0rem;
+        padding-left: 0.5rem
+    }
+
+    #dhht-footer {
+        padding: 1.5rem;
+        padding-top: 1.0rem;
+    }
+
+    .dhht-container {
+        margin: 1.0rem;
+        padding: 0.75rem;
+    }
+
+    .example-img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.0rem;
+        font-weight: bold
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p, li {
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 451px) {
+    #dhht-header {
+        padding: 1.0rem
+    }
+
+    #dhht-footer {
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .dhht-container {
+        margin: 1.0rem;
+        padding: 1.0rem;
+    }
+
+    .example-img {
+        width: 75%;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 2.0rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+
+    p, li {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (min-width: 821px) {
+    #dhht-header {
+            padding: 1.0rem
+        }
+
+    #dhht-footer {
+        padding-left: 1.75rem;
+    }
+    .dhht-container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    h2 {
+        font-weight: 550
+    }
+
+    h3 {
+        font-weight: 500
+    }
+
+    
+}
+
+a {
+    color: #16A0AC;
+    font-weight: 500;
+
+}
+
+body {
+    font-family: "Helvetica Neue Light", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar > div > a:hover, .navbar > div > div > ul > li > a:hover {
+    color: #60D0DA
+}
+
+.accordion-button {
+    background-color: #B4E2E8;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #60D0DA;
+}
+
+code, pre code {
+    background-color: black;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-left: 1.0rem;
+    margin-left: 1.5rem
+}
+
+.dhht-container {
+    flex-grow: 1;
+}
+
+.dhht-navbar-default {
+    background-image: none;
+    background-color: #052049;
+}
+
+.dhht-card {
+    .card-header {
+        a {    
+            color: #ffffff;
+        }
+        color: #ffffff;
+        background-color: #16A0AC;
+    }
+}
+
+.dhht-definition {
+    background-color: #B4E2E8;
+}
+
+#dhht-footer {
+    bottom: 0;
+    width: 100%;
+}
+
+.dropdown-item, .nav-link, .navbar-brand, .nav-item {
+    color: #ffffff;
+}
+
+.example-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.highlighter {
+    background-color: #FEB80A;
+    font-weight: 500
+}
+
+.list-lesson {
+    color: #16A0AC;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.list-split-sublesson {
+    margin-left: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.term {
+    color: #E61048;
+    font-weight: 600
+}
+
+
+
