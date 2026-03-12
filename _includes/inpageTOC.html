@@ -1,17 +1,15 @@
 <div class="col-md-6 col-lg-6 mb-3">
     <h2>Table of Contents</h2>
-    <div class="card">
-        <ul class="list-group list-group-flush">
-            {% assign toc = site.lessons | where: "structurehead", page.structurehead %}
-            {% for listloop in toc %}
-                {% if listloop.layout == "lesson" %}
-                <li class="list-group-item"><a href="{{ site.baseurl }}{{ listloop.permalink }}" class="list-lesson">Lesson Group {{ listloop.title }}</a></li>
-                {% elsif listloop.layout == "sublesson" and listloop.nest != "mac" and listloop.nest != "windows" %}
-                <li class="list-group-item"><a href="{{ site.baseurl }}{{ listloop.permalink }}" class="list-lesson">Lesson {{ listloop.lessonprint }}: {{ listloop.title }}</a></li>
-                {% elsif listloop.layout == "sublesson" and listloop.nest == "mac" or listloop.nest == "windows" %}
-                <li class="list-group-item"><a href="{{ site.baseurl }}{{ listloop.permalink }}" class="list-split-sublesson">Lesson {{ listloop.lessonprint }}: {{listloop.title }}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
+    <ul class="list-group">
+        {% assign toc = site.lessons | where: "structurehead", page.structurehead %}
+        {% for listloop in toc %}
+            {% if listloop.layout == "lesson" %}
+            <li class="list-group-item"><a href="{{ site.baseurl }}{{ listloop.permalink }}" class="list-lesson">Lesson Group {{ listloop.title }}</a></li>
+            {% elsif listloop.layout == "sublesson" and listloop.nest != "mac" and listloop.nest != "windows" %}
+            <li class="list-group-item"><a href="{{ site.baseurl }}{{ listloop.permalink }}" class="list-lesson">Lesson {{ listloop.lessonprint }}: {{ listloop.title }}</a></li>
+            {% elsif listloop.layout == "sublesson" and listloop.nest == "mac" or listloop.nest == "windows" %}
+            <li class="d-flex justify-content-end list-group-item"><a href="{{ site.baseurl }}{{ listloop.permalink }}" class="list-split-sublesson">Lesson {{ listloop.lessonprint }}: {{listloop.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
 </div>

@@ -1,18 +1,19 @@
-@media  (max-width: 450px) {
+@media (max-width: 410px) {
     #dhht-header {
-        padding-top: 1.0rem;
-        padding-bottom: 1.0rem;
+        padding-top: 1.0em;
+        padding-bottom: 1.0em;
         padding-left: 0.5rem
     }
 
     #dhht-footer {
-        padding: 1.5rem;
-        padding-top: 1.0rem;
+        padding: 1.5em;
+        padding-top: 1.0em;
     }
 
     .dhht-container {
-        margin: 1.0rem;
-        padding: 0.75rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.0em;
     }
 
     .example-img {
@@ -20,37 +21,40 @@
     }
 
     h1 {
-        font-size: 2.0rem;
+        font-size: 1.6em;
         font-weight: bold
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.4em;
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.2em;
     }
 
-    p, li {
-        font-size: 1.1rem;
+    p,
+    li {
+        font-size: 1.1em;
     }
 }
-@media (min-width: 451px) {
+
+@media (min-width: 411px) {
     #dhht-header {
         padding: 1.0rem
     }
 
     #dhht-footer {
-        padding-left: 1.75rem;
-        padding-right: 1.75rem;
-        padding-top: 2rem;
-        padding-bottom: 3rem;
+        padding-left: 1.75em;
+        padding-right: 1.75em;
+        padding-top: 2em;
+        padding-bottom: 3em;
     }
 
     .dhht-container {
-        margin: 1.0rem;
-        padding: 1.0rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.0em;
     }
 
     .example-img {
@@ -58,38 +62,40 @@
     }
 
     h1 {
-        font-size: 2.4rem;
+        font-size: 2.0em;
         font-weight: bold;
     }
 
     h2 {
-        font-size: 2.0rem;
+        font-size: 1.6em;
     }
 
     h3 {
-        font-size: 1.8rem;
+        font-size: 1.3em;
     }
 
 
-    p, li {
-        font-size: 1.1rem;
+    p,
+    li {
+        font-size: 1.1em;
     }
 
 }
 
 @media (min-width: 821px) {
     #dhht-header {
-            padding: 1.0rem
-        }
+        padding: 1.0rem;
+    }
 
     #dhht-footer {
-        padding-left: 1.75rem;
+        padding-left: 1.75em;
     }
+
     .dhht-container {
         margin-left: auto;
         margin-right: auto;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 4em;
+        padding-right: 4em;
     }
 
     h2 {
@@ -99,8 +105,6 @@
     h3 {
         font-weight: 500
     }
-
-    
 }
 
 a {
@@ -116,7 +120,8 @@ body {
     min-height: 100vh;
 }
 
-.navbar > div > a:hover, .navbar > div > div > ul > li > a:hover {
+.navbar>div>a:hover,
+.navbar>div>div>ul>li>a:hover {
     color: #60D0DA
 }
 
@@ -126,50 +131,76 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #60D0DA;
+    background-color: #16A0AC;
+    color: #ffffff
 }
 
-code, pre code {
-    background-color: black;
+.blockquote {
+    background-color: #E2F4FC;
+    padding: 1.0em
+}
+
+.caption {
+    font-style: italic;
+}
+
+code,
+pre code {
+    background-color: #000000;
     color: #ffffff;
-    font-size: 1.2rem;
-    padding-left: 1.0rem;
-    margin-left: 1.5rem
+    font-size: 1.1em;
+    text-align: center;
 }
 
 .dhht-container {
+    overflow: scroll;
     flex-grow: 1;
+    width: 100%;
 }
 
 .dhht-navbar-default {
     background-image: none;
     background-color: #052049;
+    width: 100%;
 }
 
 .dhht-card {
     .card-header {
-        a {    
+        a {
             color: #ffffff;
         }
+
         color: #ffffff;
         background-color: #16A0AC;
     }
 }
 
 .dhht-definition {
+    .term {
+        font-size: 1.5em
+    }
+
     background-color: #B4E2E8;
 }
 
 #dhht-footer {
     bottom: 0;
-    width: 100%;
 }
 
-.dropdown-item, .nav-link, .navbar-brand, .nav-item {
+.dropdown-item,
+.nav-link,
+.navbar-brand,
+.nav-item {
     color: #ffffff;
 }
 
 .example-img {
+    img {
+        max-height: 600px;
+        min-width: 75%;
+        overflow: scroll;
+    }
+
     display: block;
     margin-left: auto;
     margin-right: auto
@@ -187,15 +218,15 @@ code, pre code {
 }
 
 .list-split-sublesson {
-    margin-left: 1.5rem;
-    color: black;
+    color: #000000;
     text-decoration: none;
+    text-align: right;
 }
 
 .term {
-    color: #E61048;
-    font-weight: 600
+    font-weight: 600;
 }
 
-
-
+p>.term {
+    color: #16A0AC
+}

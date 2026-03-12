@@ -1,0 +1,12 @@
+<blockquote class="blockquote text-right">
+    <p>{{ include.quote }}</p>
+    <footer class="blockquote-footer">
+        {% if include.author and include.title %}
+            {{ include.author }}, <cite title="{{ include.title }}">{{ include.title }}</cite> 
+        {% elsif include.author %}
+            {{ include.author }}
+        {% elsif include.title %}
+            <cite title="{{ include.title }}">{{ include.title }}</cite>
+        {% endif %}
+    </footer>
+</blockquote>
