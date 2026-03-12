@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "DigitalHealthHumanities-toolkit-theme"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["UCSF Archives and Special Collections"]
   spec.email         = ["digitalarchives@ucsf.edu"]
 
@@ -12,6 +12,6 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
-  spec.add_runtime_dependency "ruby", "~> 4.4"
+  spec.add_runtime_dependency "ruby", "~> 3.4.4"
   spec.add_runtime_dependency "jekyll", "~> 3.5"
 end
