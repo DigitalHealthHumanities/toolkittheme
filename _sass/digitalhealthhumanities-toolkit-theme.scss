@@ -1,0 +1,232 @@
+@media (max-width: 410px) {
+    #dhht-header {
+        padding-top: 1.0em;
+        padding-bottom: 1.0em;
+        padding-left: 0.5rem
+    }
+
+    #dhht-footer {
+        padding: 1.5em;
+        padding-top: 1.0em;
+    }
+
+    .dhht-container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.0em;
+    }
+
+    .example-img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.6em;
+        font-weight: bold
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p,
+    li {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 411px) {
+    #dhht-header {
+        padding: 1.0rem
+    }
+
+    #dhht-footer {
+        padding-left: 1.75em;
+        padding-right: 1.75em;
+        padding-top: 2em;
+        padding-bottom: 3em;
+    }
+
+    .dhht-container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.0em;
+    }
+
+    .example-img {
+        width: 75%;
+    }
+
+    h1 {
+        font-size: 2.0em;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+
+    p,
+    li {
+        font-size: 1.1em;
+    }
+
+}
+
+@media (min-width: 821px) {
+    #dhht-header {
+        padding: 1.0rem;
+    }
+
+    #dhht-footer {
+        padding-left: 1.75em;
+    }
+
+    .dhht-container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    h2 {
+        font-weight: 550
+    }
+
+    h3 {
+        font-weight: 500
+    }
+}
+
+a {
+    color: #16A0AC;
+    font-weight: 500;
+
+}
+
+body {
+    font-family: "Helvetica Neue Light", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar>div>a:hover,
+.navbar>div>div>ul>li>a:hover {
+    color: #60D0DA
+}
+
+.accordion-button {
+    background-color: #B4E2E8;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #16A0AC;
+    color: #ffffff
+}
+
+.blockquote {
+    background-color: #E2F4FC;
+    padding: 1.0em
+}
+
+.caption {
+    font-style: italic;
+}
+
+code,
+pre code {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.dhht-container {
+    overflow: scroll;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.dhht-navbar-default {
+    background-image: none;
+    background-color: #052049;
+    width: 100%;
+}
+
+.dhht-card {
+    .card-header {
+        a {
+            color: #ffffff;
+        }
+
+        color: #ffffff;
+        background-color: #16A0AC;
+    }
+}
+
+.dhht-definition {
+    .term {
+        font-size: 1.5em
+    }
+
+    background-color: #B4E2E8;
+}
+
+#dhht-footer {
+    bottom: 0;
+}
+
+.dropdown-item,
+.nav-link,
+.navbar-brand,
+.nav-item {
+    color: #ffffff;
+}
+
+.example-img {
+    img {
+        max-height: 600px;
+        min-width: 75%;
+        overflow: scroll;
+    }
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.highlighter {
+    background-color: #FEB80A;
+    font-weight: 500
+}
+
+.list-lesson {
+    color: #16A0AC;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.list-split-sublesson {
+    color: #000000;
+    text-decoration: none;
+    text-align: right;
+}
+
+.term {
+    font-weight: 600;
+}
+
+p>.term {
+    color: #16A0AC
+}
