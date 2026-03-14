@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "digitalhealthhumanities-toolkit-theme"
-  spec.version       = "0.1.6"
+  spec.version       = "0.1.8"
   spec.authors       = ["UCSF Archives and Special Collections"]
   spec.email         = ["digitalarchives@ucsf.edu"]
 
