@@ -7,13 +7,13 @@ This theme is designed to help you jumpstart your own responsive learning GitHub
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "DigitalHealthHumanities-toolkit-theme"
+gem "digitalhealthhumanities-toolkit-theme"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: DigitalHealthHumanities-toolkit-theme
+theme: digitalhealthhumanities-toolkit-theme
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install DigitalHealthHumanities-toolkit-theme
+    $ gem install digitalhealthhumanities-toolkit-theme
 
 ## Usage
 

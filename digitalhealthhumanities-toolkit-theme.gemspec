@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "DigitalHealthHumanities-toolkit-theme"
+  spec.name          = "digitalhealthhumanities-toolkit-theme"
   spec.version       = "0.1.6"
   spec.authors       = ["UCSF Archives and Special Collections"]
   spec.email         = ["digitalarchives@ucsf.edu"]
