@@ -83,6 +83,7 @@
 }
 
 @media (min-width: 821px) {
+    
     #dhht-header {
         padding: 1.0rem;
     }
@@ -107,10 +108,22 @@
     }
 }
 
+// General CSS
+
 a {
     color: #16A0AC;
     font-weight: 500;
 
+}
+
+.bio {
+    max-height: 300px;
+    overflow: scroll
+}
+
+.headshot {
+    width: auto;
+    max-height: 300px
 }
 
 body {

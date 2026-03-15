@@ -1,0 +1,21 @@
+<div class="card mb-3 bio">
+    <div class="row g-0">
+        {% if include.person.headshot != 'n/a' %}
+        <div class="col-md-4 col-lg-3">
+            <img src="{{ site.baseurl }}/assets/img/{{ include.person.headshot }}" class="headshot" alt="Headshot of {{ include.person.name }}">
+        </div>
+        {% endif %}
+        <div class="col-md-8 col-lg-9">
+            <div class="card-body">
+                <h4 class="card-title">{{ include.person.name }} - {{ include.person.association }}</h4>
+                <p class="card-text">
+                    {% if include.person.title %}
+                        {{ include.person.title }}, 
+                    {% endif %}
+                        {{ include.person.affiliation }} 
+                </p>
+                <p class="card-text">{{ include.person.bio }}</p>
+            </div>
+        </div>
+    </div>
+</div>
