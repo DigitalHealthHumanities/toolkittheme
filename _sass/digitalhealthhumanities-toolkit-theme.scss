@@ -111,7 +111,7 @@
 // General CSS
 
 a {
-    color: #16A0AC;
+    color: #0F388A;
     font-weight: 500;
 
 }
@@ -178,13 +178,11 @@ pre code {
 }
 
 .dhht-card {
+    a {
+        color: #000000
+    }
     .card-header {
-        a {
-            color: #ffffff;
-        }
-
-        color: #ffffff;
-        background-color: #16A0AC;
+        background-color: #60D0DA;
     }
 }
 
@@ -241,5 +239,5 @@ pre code {
 }
 
 p>.term {
-    color: #16A0AC
+    color: #0F388A
 }

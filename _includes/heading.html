@@ -16,11 +16,11 @@
                 {% for item in site.menu %}
                     {% if item.sub %}
                     <li class='nav-item dropdown'>
-                        <a class='nav-link dropdown-toggle' href='#' role="button" id='dhht-{{ item.label | slugify }}-dropdown'
-                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                        <button class='nav-link dropdown-toggle' type="button" id='dhht-{{ item.label | slugify }}-dropdown'
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false' aria-controls="#dhht-{{ item.label | slugify }}-dropdown-item">
                             {{ item.label }}
-                        </a>
-                        <ul class='dropdown-menu' aria-labelledby='dhht-{{ item.label | slugify }}-dropdown'>
+                        </button>
+                        <ul class='dropdown-menu' id="dhht-{{ item.label | slugify }}-dropdown-item">
                             {% for sub in item.sub %}
                                 <li>
                                     <a class='dropdown-item' href='{{ sub.link | absolute_url }}'>{{ sub.label }}</a>
