@@ -17,16 +17,14 @@
                     {% if item.sub %}
                     <li class='nav-item dropdown'>
                         <button class='nav-link dropdown-toggle' type="button" id='dhht-{{ item.label | slugify }}-dropdown'
-                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false' aria-controls="#dhht-{{ item.label | slugify }}-dropdown-item">
+                            data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
                             {{ item.label }}
                         </button>
-                        <ul class='dropdown-menu' id="dhht-{{ item.label | slugify }}-dropdown-item">
+                        <div class='dropdown-menu' aria-labelledby='dhht-{{ item.label | slugify }}-dropdown'>
                             {% for sub in item.sub %}
-                                <li>
-                                    <a class='dropdown-item' href='{{ sub.link | absolute_url }}'>{{ sub.label }}</a>
-                                </li>
+                                <a class='dropdown-item' href='{{ sub.link | absolute_url }}'>{{ sub.label }}</a>
                             {% endfor %}
-                        </ul>
+                        </div>
                     </li>
                     {% else %}
                     <li class='nav-item'>
