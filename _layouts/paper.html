@@ -1,13 +1,11 @@
 ---
 layout: default
-format: pdf
 ---
 
-<h1>{{ page.title  }}</h1>
+<h1>{{ page.title }}</h1>
 <p>By: {{ page.author }}</p>
 <p>{{ page.description }}</p>
 
-<div class="mx-auto">
-    <object data="{{ site.baseurl }}{{ page.filepath }}" width="1000" height="1000"
-    type="application/pdf" alt="If this file refuses to load, you can find a copy at our GitHub repository (link in the footer)"></object>
+<div class="justify-content-center">
+    {{ content }}
 </div>
