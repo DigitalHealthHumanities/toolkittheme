@@ -7,13 +7,13 @@ format: lessongroup
 
 <p>{{ page.description }}</p>
 
-<div class="accordion dhht-accordion" id="accordion-{{ page.title }}" aria-label="accordion-{{ page.title }}">
+<div class="accordion dhht-accordion" id="accordion-{{ page.title }}">
   {% assign lessongroup = site.lessons | where: "group", page.group | where: "layout", "lesson" %}
   {% for lesson in lessongroup %}
     <div class="accordion-item">
       <h2 class="accordion-header" id="lessongroup-{{ lesson.structurehead }}">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nestedAccordion-{{ lesson.structurehead }}"
-          aria-expanded="false" aria-controls="nestedAccordion-{{ lesson.structurehead }}">
+          aria-expanded="false" aria-controls="nestedAccordion-{{ lesson.structurehead }}" aria-label="accordion-{{ page.title }}">
           {{ lesson.title }}
         </button>
       </h2>
