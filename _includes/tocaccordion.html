@@ -1,4 +1,4 @@
-<div class="accordion dhht-accordion accordion-collapse collapse" id="nestedAccordion-{{ include.lesson.structurehead }}" aria-labelledby="accordion-{{ include.title }}">
+<div class="accordion dhht-accordion accordion-collapse collapse" id="nestedAccordion-{{ include.lesson.structurehead }}" aria-labelledby="accordion-{{ include.title }}" aria-label="sublesson-{{ sublesson.structurehead }}">
     {% assign sublessons = site.lessons | where: "layout", "sublesson" | where: "structurehead", include.lesson.structurehead %}
     {% for sublesson in sublessons %}
         <div class="accordion-item">

@@ -7,7 +7,7 @@ format: lessongroup
 
 <p>{{ page.description }}</p>
 
-<div class="accordion dhht-accordion" id="accordion-{{ page.title }}">
+<div class="accordion dhht-accordion" id="accordion-{{ page.title }}" aria-label="accordion-{{ page.title }}">
   {% assign lessongroup = site.lessons | where: "group", page.group | where: "layout", "lesson" %}
   {% for lesson in lessongroup %}
     <div class="accordion-item">
