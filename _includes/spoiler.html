@@ -8,7 +8,7 @@
             </button>
         </h2>
         <div id="answer-{{ include.problem }}" class="accordion-collapse collapse"
-            aria-labelledby="headingOne" data-bs-parent="#spoiler-{{ include.problem }}">
+            aria-labelledby="spoiler-{{ include.problem }}" data-bs-parent="#spoiler-{{ include.problem }}">
             <div class="accordion-body">
                 {% if include.image %}
                     <img src="{{ site.baseurl }}{{ include.image }}" class="example-img" alt="{{ include.alt }}" />
