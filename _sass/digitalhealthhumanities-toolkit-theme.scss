@@ -104,6 +104,7 @@
     }
 
     h3 {
+        font-size: 1.5em;
         font-weight: 500
     }
 }
@@ -158,6 +159,10 @@ body {
 
 .caption {
     font-style: italic;
+}
+
+.card-title {
+    text-transform: capitalize;
 }
 
 code,
@@ -223,6 +228,10 @@ pre code {
 .highlighter {
     background-color: #FEB80A;
     font-weight: 500
+}
+
+h3 {
+    color: #14828C;
 }
 
 .list-lesson {
