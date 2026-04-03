@@ -7,47 +7,57 @@ This theme is designed to help you jumpstart your own responsive learning GitHub
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "digitalhealthhumanities-toolkit-theme"
+gem "jekyll-remote-theme"
+gem 'digitalhealthhumanities-toolkit-theme', '~> 0.1.9' (or current version of theme)
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: digitalhealthhumanities-toolkit-theme
+remote_theme: DigitalHealthHumanities/toolkittheme
+
+plugins:
+  - jekyll-remote-theme
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install digitalhealthhumanities-toolkit-theme
-
 ## Usage
 
 ### Includes
 - authorshort
+- bio-card
+- blockquote
 - definition
 - footer
 - head
 - heading
+- imgwithcaption
 - inpageTOC
 - pagenav
+- spoiler
 - toaccordion
 
 ### Layouts
 - bio
+- default
 - lesson
 - lessongroup
-- page
+- paper
 - post
 - section
 - sublesson
 
-### Unique Sass Classes
-- .term - bold and change the color of your key term(s)
+### Unique Sass Tags / Classes
+- code - display code as center-aligned white text on black background
+    - i.e. 
+    ``` <code>print('Hello World!')</code> ```
 - .highlighter - highlight key text in L3 Yellow (#FEB80A)
+    - i.e. ``` <span class="highlighter">Info to emphasize</span>```
+- .term - bold and change the color of your key term(s)
+    - i.e. ``` <span class="term">floccinaucinihilipillification</span> ```
 
 ## Contributing
 
