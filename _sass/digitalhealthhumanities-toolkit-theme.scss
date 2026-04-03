@@ -1,4 +1,4 @@
-@media (max-width: 410px) {
+@media (max-width: 420px) {
     #dhht-header {
         padding-top: 1.0em;
         padding-bottom: 1.0em;
@@ -20,6 +20,11 @@
         width: 100%;
     }
 
+    .headshot {
+        max-width: 100%;
+        align-content: center;
+    }
+
     h1 {
         font-size: 1.6em;
         font-weight: bold
@@ -39,7 +44,7 @@
     }
 }
 
-@media (min-width: 411px) {
+@media (min-width: 421px) {
     #dhht-header {
         padding: 1.0rem
     }
@@ -51,6 +56,13 @@
         padding-bottom: 3em;
     }
 
+    .bio {
+        max-height: 250px;
+        padding: 1.1em;
+    
+        align-content: center;
+    }
+
     .dhht-container {
         margin-left: auto;
         margin-right: auto;
@@ -59,6 +71,10 @@
 
     .example-img {
         width: 75%;
+    }
+
+    .headshot {
+        max-height: 250px;
     }
 
     h1 {
@@ -92,11 +108,19 @@
         padding-left: 1.75em;
     }
 
+    .bio {
+        max-height: 300px;
+    }
+    
     .dhht-container {
         margin-left: auto;
         margin-right: auto;
         padding-left: 4em;
         padding-right: 4em;
+    }
+
+    .headshot {
+        max-height: 300px;
     }
 
     h2 {
