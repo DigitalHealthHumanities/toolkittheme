@@ -141,18 +141,13 @@ a {
 
 }
 
-.bio {
-    max-height: 300px;
-    overflow: scroll
+.bio-text {
+    max-height: 100%;
+    overflow-y: scroll;
 }
 
 .blockquote-footer {
     color: #000000
-}
-
-.headshot {
-    width: auto;
-    max-height: 300px
 }
 
 body {
