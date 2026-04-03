@@ -1,0 +1,10 @@
+<div class="mx-auto card">
+    <div class="card-body dhht-definition">
+        <h3>Key Terms</h3>
+        {% for item in site.data.terms[include.permalink] %}
+        <hr />
+        <p class="term" id="{{ item.term | slugify }}">{{ item.term }}</p>
+        <p>{{ item.definition }}</p>
+        {% endfor %}
+    </div>
+</div>

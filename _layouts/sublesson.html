@@ -5,8 +5,19 @@ format: sublesson
 
 <h1>{{ page.lessonprint }} {{ page.title }}</h1>
 
+{% if site.data.terms[page.permalink] %}
+<div class="row">
+    <div class="col-md-8">
+        {{ content }}
+    </div>
+    <div class="col-md-4">
+        {% include groupterms.html permalink=page.permalink %}
+    </div>
+</div>
+{% else %}
 {{ content }}
+{% endif %}
 
 {% include authorshort.html %}<br>
-  
+
 {% include pagenav.html %}
