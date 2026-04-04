@@ -1,3 +1,4 @@
+// Phones / xs & sm
 @media (max-width: 420px) {
     #dhht-header {
         padding-top: 1.0em;
@@ -44,6 +45,7 @@
     }
 }
 
+// Tablets / md
 @media (min-width: 421px) {
     #dhht-header {
         padding: 1.0rem
@@ -98,6 +100,7 @@
 
 }
 
+// Laptop / Desktop - lg + xl
 @media (min-width: 821px) {
     
     #dhht-header {
@@ -141,6 +144,27 @@ a {
 
 }
 
+.accordion-button {
+    background-color: #B4E2E8;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #60D0DA;
+}
+
+.backsplash {
+    background-color: #E2F4FC;
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+    margin-bottom: 1.1em;
+    margin-top: 1.1em;
+}
+
+.banner-img {
+    max-height: 500px;
+}
+
 .bio {
     overflow: auto
 }
@@ -148,6 +172,11 @@ a {
 .bio-text {
     max-height: 100%;
     overflow-y: scroll;
+}
+
+.blockquote {
+    background-color: #E2F4FC;
+    padding: 1.0em
 }
 
 .blockquote-footer {
@@ -159,25 +188,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-.navbar>div>a:hover,
-.navbar>div>div>ul>li>a:hover {
-    color: #60D0DA
-}
-
-.accordion-button {
-    background-color: #B4E2E8;
-    border: none;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: #60D0DA;
-}
-
-.blockquote {
-    background-color: #E2F4FC;
-    padding: 1.0em
 }
 
 .caption {
@@ -281,6 +291,11 @@ h3 {
     color: #000000;
     text-decoration: none;
     text-align: right;
+}
+
+.navbar>div>a:hover,
+.navbar>div>div>ul>li>a:hover {
+    color: #60D0DA
 }
 
 .term {
