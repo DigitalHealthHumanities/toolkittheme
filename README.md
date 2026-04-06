@@ -33,9 +33,17 @@ And then execute:
 - blockquote - takes quote (required), author (optional), and title (optional) and will generate a blockquote graphic with a pale blue background
     Ex: ```{% include blockquote.html quote="It is well known that a vital ingredient of success is not knowing that what you're attempting can't be done." author="Sir Terry Pratchett" title="Equal Rites" %}```
 - definition - takes term and definition and creates a key term graphic that can be inserted in page. Can also be used to call attention to an important concept.
-    Ex: ```{% include definition.html term="WYSIWYG", definition="What You See Is What You Get" %}```
+    Ex: ```{% include definition.html term="WYSIWYG" definition="What You See Is What You Get" %}```
 - *footer - creates the footer for the site - can customize links that appear in the _config.yml file. Present in default layout
 - *groupterm - displays key terms for a given sublesson in a box to the right of the main text for desktops and tablets, at the bottom for phones. Takes information from _data/terms.yml, with sublessons identified by their permalink. See sample terms.yml file for a demonstration of layout. Present in sublesson layout. If no terms present in the YAML file, this graphic does not display.
+    terms.yml Ex: 
+    /lessons/databasics/commandline/4:
+    - term: "Textual Analysis"
+        definition: "Textual analysis (or text analysis for short) refers to any method that examines large amounts of text using computational tools. Text analysis historically was used to count the use of specific words, and look at their context with other words. More contemporary text analysis uses large language models and machine learning to develop more complex groupings of interrelated words (topic modelling) or weight texts based on the positive or negative affect of words used (sentiment analysis)."
+
+    - term: "Data Cleaning"
+        definition: "Often we have to make the files we are using in our digital research compatible with our platforms. We have to deal with any errant mistakes or issues with those data sources. Removing the unnecessary information in data files is known as data cleaning."
+        
 - *head - contains page metadata. Present in default layout
 - *heading - displays the page's header. Pulls navigation labels and links from the _config.yml file's 'menu' section. Update site title in _config to update the title in the header. See the "Lessons" label for an example of how to set up a drop down.
 - imgwithcaption - formats and displays an image with a caption and an alt description. Takes filepath (location of image), alt ([image alt text] (https://accessibility.uiowa.edu/alt-text)), and caption. Resizes to fit screen. 
@@ -44,8 +52,8 @@ And then execute:
     Ex: ```{% include inpageTOC.html %}```
 - *pagenav - adds navigation buttons to the bottom of the sublesson, including navigation through Windows / Mac lesson splits - present in sublesson layout
 - spoiler - takes title (required), image (optional), alt (optional), caption (optional) and answer (optional). Displays accordion where once the user clicks on the title, the image and / or answer text display. 
-    Ex: ```{% include spoiler.html title="Did this work?" image="assets/img/thumbsup.jpg" alt="thumbs up" caption="Wikimedia Foundation" answer="Yes" %}```
-- term - takes term from the terms.yml file and adds link to the groupterm include on the page
+    Ex: ```{% include spoiler.html title="Did this work?" image="/assets/img/thumbsup.jpg" alt="thumbs up" caption="Wikimedia Foundation" answer="Yes" %}```
+- term - takes term from the terms.yml file, increases font weight, changes color to navy, and adds link to the groupterm include on the page
     Ex: ```{% include term.html term="Digital Health Humanities" %}```
 - *toaccordion
 
