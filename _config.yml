@@ -20,7 +20,7 @@ menu:
   - label: 'Lessons'
     sub:
       - label: 'All Lessons'
-        link: 'lessons/'
+        link: '#'
   - label: 'White Paper'
     link: '#'
   - label: 'Resources'
@@ -34,6 +34,7 @@ menu:
 footer:
   links:
     - label: 'GitHub'
+    - link: '#'
 
     
 exclude :
