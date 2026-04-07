@@ -1,6 +1,6 @@
 # jekyll-toolkit-theme
 
-This theme is designed to help you jumpstart your own responsive learning GitHub Pages site. Add your lesson plans and have your students be able to learn asynchronously for free!
+This theme is designed to help you jumpstart your own responsive GitHub Pages education site. Add your lesson plans and have your students be able to learn asynchronously for free on any device!
 
 ## Installation
 
@@ -24,8 +24,15 @@ And then execute:
 
     $ bundle
 
-## Usage
+Then, add a styles.scss page to your assets file. 
+At the top, add the line: ```@import 'digitalhealthhumanities-toolkit-theme';```
 
+To check that everything worked, run ```bundle exec jekyll serve``` to see your basic home page. 
+
+## Getting Started
+
+
+## Important Includes / Layouts / CSS Dictionary
 ### Includes
 - *authorshort - provides author name and association for each lesson - present in the sublesson layout
 
@@ -68,8 +75,6 @@ And then execute:
 - *toaccordion - takes the lessons and sublessons from a lesson group and creates an accordion within an accordion. Users can click on sublesson links to navigate. Built into the lessongroup layout.
 
 *Built into theme layouts
-
-
 
 ### Layouts
 - bio - creates a page for a contributor's bio. If you'd like to display all contributors on the same page, use include bio-card 
