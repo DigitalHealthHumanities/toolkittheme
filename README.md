@@ -1,6 +1,6 @@
 # jekyll-toolkit-theme
 
-This theme is designed to help you jumpstart your own responsive GitHub Pages education site. Add your lesson plans and have your students be able to learn asynchronously for free on any device!
+This Jekyll theme is designed to help you jumpstart your own responsive GitHub Pages education site. Add your lesson plans and have your students be able to learn asynchronously for free on any device! 
 
 ## Installation
 
@@ -27,10 +27,25 @@ And then execute:
 Then, add a styles.scss page to your assets file. 
 At the top, add the line: ```@import 'digitalhealthhumanities-toolkit-theme';```
 
-To check that everything worked, run ```bundle exec jekyll serve``` to see your basic home page. 
+To check that everything worked, run ```bundle exec jekyll serve```. When you visit the site, you should notice the header and footer appear. 
 
 ## Getting Started
+First thing's first - update your site title and description in the _config page. You can also set up your header labels and links once you have some pages made. Next, copy the code from the theme index.md file to your Jekyll site's index.md file. 
 
+To finish out the basic home page, add a banner image to your assets/img folder named "banner-img.jpg". If you take a look at the index.md file, you'll see that there are supposed to be cards spawning on the page, but no cards show up. Let's fix that. 
+
+The home page generates cards for each lesson group in your site. So, let's start adding in some lesson content. 
+
+In this theme, there are lesson groups, lessons, and sublessons. Let's break them down, starting with sublessons and working our way up. *Sublessons* are individual lesson plans. Multiple sublessons on a given topic make up a *lesson*. Multiple lessons on a given theme make up a *lesson group*. For example, in the lesson group "Digital Basics", you may have a lesson called "Command Line Basics", which in turn has several sublessons, including one titled "Why Does the Command Line Matter?".
+
+Now, let's try adding a lesson group. Create an md file, naming it in a way that will help keep you organized, like "1-0-0_\[name].md". Next, paste in the following:
+
+---
+---
+
+In between these lines of dashes, copy and paste the Attributes from the lessongroup layout in the "Layouts" section below. You'll want to fill out each attribute, with the permalink starting with a "/" (i.e. "/tutorial"). Now, try running your site again and see what happens. 
+
+From there, try adding lessons and sublessons, using the applicable attributes below, and see how they look on your website. Feel free to try other layouts and to try some of the includes below to add different functionalities to your site. 
 
 ## Important Includes / Layouts / CSS Dictionary
 ### Includes
