@@ -17,7 +17,15 @@
                 {% endif %}
                 {{ include.person.affiliation }}
             </p>
+
+            {% if include.person.projectblurb %}
+            <h5>About {{ include.person.projecttitle }}</h5>
+            <p class="bio-text">{{ include.person.projectblurb }}</p>
+            {% endif %}
+
+            <h5>Personal Bio</h5>
             <p class="bio-text">{{ include.person.bio }}</p>
+
         </div>
     </div>
 </div>
