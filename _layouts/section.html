@@ -3,19 +3,24 @@ layout: default
 format: section
 ---
 
-{% for grouploop in site.lessons %}
-{% if grouploop.layout == "lessongroup" %}
-<h3><a href="{{ site.baseurl }}{{ grouploop.permalink }}">{{ grouploop.title }}</a><br></h3>
-{{ content }}<br>
-{% assign grouptitle = grouploop.group %}
-{% for secondloop in site.lessons %}
-{% if secondloop.group == grouptitle %}
-{% if secondloop.layout == "lesson" %}
-<b><a href="{{ site.baseurl }}{{ secondloop.permalink }}">{{ secondloop.title }}</a></b><br>
-{{ secondloop.abstract }}<br>
-{% endif %}
-{% endif %}
-{% endfor %}
-{% endif %}
-{% endfor %} 
+<h1>{{ page.title }}</h1>
 
+{% assign lessongroups = site.lessons | where: "layout", "lessongroup" %}
+{% assign lessons = site.lessons | where: "layout", "lesson" %}
+<ul class="list-group-flush">
+    {% for group in lessongroups %}
+    <li class="list-group-item">
+        <h2><a href="{{ site.baseurl }}{{ group.permalink }}">{{ group.title }}</a></h2>
+    </li>
+    <ul class="list-group-flush">
+        {% for lesson in lessons %}
+        {% if lesson.group == group.group %}
+        <li class="list-group-item">
+            <h3><a href="{{ site.baseurl }}{{ lesson.permalink }}">{{ lesson.title }}</a></h3>
+            <p>{{ lesson.abstract }}</p>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</ul>
